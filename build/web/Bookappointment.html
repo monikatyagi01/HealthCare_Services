@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Appointment</title>
+  <link rel="stylesheet" href="CSS/bookstyle.css" />
+</head>
+<body>
+  <div class="appointment-container">
+    <h2>Book an Appointment</h2>
+    <form id="appointmentForm">
+      <div class="form-group">
+        <label for="name">Patient Name</label>
+        <input type="text" id="name" name="p1" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="p2" required />
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="p3" required />
+      </div>
+      <div class="form-group">
+        <label for="department">Department</label>
+        <select id="department" name="p4" required>
+          <option value="">Select Department</option>
+          <option value="general">General Medicine</option>
+          <option value="cardiology">Cardiology</option>
+          <option value="dermatology">Dermatology</option>
+          <option value="neurology">Neurology</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="date">Appointment Date</label>
+        <input type="date" id="date" name= "p5" required />
+      </div>
+      <div class="form-group">
+        <label for="time">Time</label>
+        <input type="time" id="time" name="p6" required />
+      </div>
+      <button type="submit">Book Appointment</button>
+    </form>
+    <div class="success-message" id="successMessage"></div>
+  </div>
+
+  <script src="JS/bookscript.js"></script>
+</body>
+</html>
+
